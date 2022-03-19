@@ -4,7 +4,7 @@ const {
   formField: { sourceLocation, destination, carType, phoneNumber, name },
 } = checkoutFormModel;
 
-export default [
+const validationSchema = [
   Yup.object().shape({
     [sourceLocation.name]: Yup.string().required(
       `${sourceLocation.requiredErrorMsg}`
@@ -23,3 +23,5 @@ export default [
     ),
   }),
 ];
+
+export default validationSchema;

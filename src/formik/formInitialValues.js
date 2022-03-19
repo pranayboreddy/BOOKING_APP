@@ -15,7 +15,7 @@ const {
   },
 } = checkoutFormModel;
 
-export default {
+const formInitialValues = {
   [sourceLocation.name]: "",
   [destination.name]: "",
   [carType.name]: "",
@@ -28,3 +28,5 @@ export default {
   [whatsappCheck.name]: false,
   [isBidVerified.name]: false,
 };
+
+export default formInitialValues;

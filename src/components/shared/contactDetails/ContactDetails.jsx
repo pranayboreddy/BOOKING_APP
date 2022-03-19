@@ -10,7 +10,7 @@ const ContactDetails = () => {
   const {
     formField: { phoneNumber, name, remarks, whatsappCheck },
   } = checkoutFormModel;
-  const { values: formValues, ...rest } = useFormikContext();
+  const { values: formValues } = useFormikContext();
   const { phoneNumber: phoneNumberValue } = formValues;
 
   return (
