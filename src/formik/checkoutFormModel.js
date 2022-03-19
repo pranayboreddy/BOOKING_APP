@@ -1,4 +1,4 @@
-export default {
+const checkoutFormModel = {
   formId: "bidForm",
   formField: {
     sourceLocation: {
@@ -52,3 +52,5 @@ export default {
     },
   },
 };
+
+export default checkoutFormModel;

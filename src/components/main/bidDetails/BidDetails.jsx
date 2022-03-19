@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import { Box, Typography, FormGroup } from "@mui/material";
+import React from "react";
+import { Box, Typography } from "@mui/material";
 import { CheckboxField, CommonButton } from "../../formFields";
 import { formatRupee } from "../../../common/utils";
 import { Field, useFormikContext } from "formik";

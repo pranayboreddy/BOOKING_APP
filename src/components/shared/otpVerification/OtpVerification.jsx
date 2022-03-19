@@ -7,10 +7,10 @@ import OTPInput from "otp-input-react";
 import { OTPStyles } from "../../../common/utils";
 import { FormContext } from "../../../App";
 
-const OtpVerification = (props) => {
+const OtpVerification = () => {
   const [OTP, setOTP] = useState("");
   const [OTPError, setOTPError] = useState("");
-  const { values: formValues, handleSubmit, ...rest } = useFormikContext();
+  const { values: formValues, handleSubmit } = useFormikContext();
   const { phoneNumber } = formValues;
   const isOTPError = OTPError && OTP.length === 4;
   const { handleStep } = useContext(FormContext);
