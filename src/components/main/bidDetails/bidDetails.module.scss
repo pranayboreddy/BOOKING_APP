@@ -1,0 +1,12 @@
+.currencyInput {
+  border: 0;
+  font-size: 45px;
+  max-width: 100px;
+  &:focus-visible {
+    outline: 0;
+  }
+}
+
+.currencyIcon {
+  line-height: 1;
+}
