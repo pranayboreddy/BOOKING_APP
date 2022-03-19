@@ -26,6 +26,7 @@ const OtpVerification = () => {
 
   useEffect(() => {
     OTP.length === 4 && validateToSubmit();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [OTP]);
 
   return (
